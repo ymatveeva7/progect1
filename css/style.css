@@ -10,7 +10,30 @@
     display:flex;
     justify-content:space-between;
 }
-.slider{
-    display:flex;
-    justify-content: center;
+.text{
+display: flex;
+    margin-top: 350px;
+z-index:1;
 }
+.slider{
+    display: flex;
+    background-color:#e9b637;
+   height:480px;
+    box-shadow: 0 0 10px;
+    background-image: url('../img/xiaomi_air_perf_pic_04_copy1.png');
+    background-position: 70% 10%;
+    background-repeat: no-repeat;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: -390px;
+    z-index: 0;
+}
+.buttons{
+  display: flex;
+    flex-direction: column;
+    margin-right: 1150px;
+}
+
