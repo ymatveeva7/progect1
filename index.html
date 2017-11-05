@@ -3,9 +3,11 @@
 <head>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <script src="js/js.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 
 <header>
@@ -19,8 +21,16 @@
             </b></div>
         <div class="header1">
             <b>
-                <a href="#"><img src="img/vxod.png"> Личный кабинет</a>
+                <a href="#" onClick="buttone()"><img src="img/vxod.png"> Личный кабинет</a>
                 <a href="#"><img src="img/korz.png"> Корзина</a></b></div>
+        <div id="popupWin" class="modalwin">
+            <h2> ЛИЧНЫЙ КАБИНЕТ </h2>
+            <form>
+                <h4>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</h4>
+                <input type="radio"><p> ЗАПОМНИ МЕНЯ</p>
+                <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
+                <input type="button" value="ВОЙТИ">
+            </form>
     </section>
     <section><div class="background">
     </div></section>
@@ -28,13 +38,25 @@
     </div>
     <section>
         <div class="hesder2">
+
             <b>
                 <a href="#">Доставка</a>
                 <a href="#">Гарантия</a>
                 <a href="#">Контакты</a>
             </b></div>
         <div class="categori">
-            <b><a href="#">ВСЕ КАТЕГОРИИ +</a></b>
+            <ul class="site-navigation wrapper">
+                <li><b>ВСЕ КАТЕГОРИИ</b> +
+                    <ul class="dropdown-submenu">
+                        <li><a href="#">Роутеры</a></li>
+                        <li><a href="#">Игровые симуляторы</a></li>
+                        <li><a href="#">Комплектующие</a></li>
+                        <li><a href="#">Переферия</a></li>
+                        <li><a href="#">Настольные лампы</a></li>
+                        <li><a href="#">Моноблоки и ноутбуки</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </section>
 </header>
@@ -42,7 +64,7 @@
 
     <section class="slaider-1">
         <div class="slaider1-main">
-            <div class="slaider-control-switches-1">
+            <div class="slaider-control-switches-1" id='menu' onClick="hov()">
                 <div><label for="slaider1-1"> </label></div>
                 <div><label for="slaider1-2"> </label></div>
                 <div><label for="slaider1-3"> </label></div>
@@ -79,17 +101,18 @@
             </div>
         </div>
     </section><br>
-    <hr>
+    <hr><br>
     <section class="brands">
-        <ul class="products">
-            <li><div><a href="#"><img src="img/comp_icon.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br><p>МОНОБЛОКИ И НОУТБУКИ</p></li></a>
-            <li><div><a href="#"><img src="img/comp(1)_icon.png" alt="ПЕРЕФЕРИЯ"></div><br><p>ПЕРЕФЕРИЯ</p></li></a>
-            <li><div><a href="#"><img src="img/comp(2)_icon.png" alt="КОМПЛЕКТУЮЩИЕ"></div><br><p>КОМПЛЕКТУЮЩИЕ</p></li></a>
-            <li><div><a href="#"><img src="img/internet_icon.png" alt="РОУТЕРЫ"></div><br><p>РОУТЕРЫ</p></li></a>
-            <li><div><a href="#"><img src="img/lamp_icon.png" alt="НАСТОЛЬНЫЕ ЛАМПЫ"></div><br><p>НАСТОЛЬНЫЕ ЛАМПЫ</p></li></a>
-            <li><div><a href=#"><img src="img/game_icon.png" alt="ИГРОВЫЕ СИМУЛЯТОРЫ"></div><br><p>ИГРОВЫЕ СИМУЛЯТОРЫ</p></li></a>
-        </ul>
-
+        <div class="bra">
+            <ul class="products">
+                <li><div><a href="#"><img src="img/comp_icon.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br><p>МОНОБЛОКИ И НОУТБУКИ</p></li></a>
+                <li><div><a href="#"><img src="img/comp(1)_icon.png" alt="ПЕРЕФЕРИЯ"></div><br><p>ПЕРЕФЕРИЯ</p></li></a>
+                <li><div><a href="#"><img src="img/comp(2)_icon.png" alt="КОМПЛЕКТУЮЩИЕ"></div><br><p>КОМПЛЕКТУЮЩИЕ</p></li></a>
+                <li><div><a href="#"><img src="img/internet_icon.png" alt="РОУТЕРЫ"></div><br><p>РОУТЕРЫ</p></li></a>
+                <li><div><a href="#"><img src="img/lamp_icon.png" alt="НАСТОЛЬНЫЕ ЛАМПЫ"></div><br><p>НАСТОЛЬНЫЕ ЛАМПЫ</p></li></a>
+                <li><div><a href=#"><img src="img/game_icon.png" alt="ИГРОВЫЕ СИМУЛЯТОРЫ"></div><br><p>ИГРОВЫЕ СИМУЛЯТОРЫ</p></li></a>
+            </ul>
+        </div>
     </section><br><hr><br>
     <section class="slaider-2">
         <div class="slaider2-main">
@@ -159,7 +182,8 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                 </ul>
-                <div class="pblock"><a href="#">Напишите нам</a></div></div></div>
+                <div class="pblock"><hr><a href="#">Напишите нам</a></div>
+            </div>
         </article>
         <article class="block2">
             <div class="pochta">
@@ -169,7 +193,7 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
                     Узнавайте первыми о новостях,акциях<br>
                     и скидках интернет-магазина
                 </p><br>
-                <input type="email" value="Ваш e-mail"></input><br>
+                <input type="email" value="Ваш e-mail"> </input><br>
                 <pre>
 Указанная информация не будет передана
 третьим лицам. Вы можете отписаться от
@@ -203,8 +227,8 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
         </div>
         <div class="kab">
             <b>
-                <a href="#"><img src="img/vxod.png"> Личный кабинет</a>
-                <a href="#"><img src="img/korz.png"> Корзина</a>
+                <p><a href="#"><img src="img/vxod.png"> Личный кабинет</a>
+                    <a href="#"><img src="img/korz.png"> Корзина</a></p>
             </b>
         </div>
     </section>
