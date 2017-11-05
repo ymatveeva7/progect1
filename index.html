@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <link href="css/style.css" rel="stylesheet">
@@ -21,16 +21,21 @@
             </b></div>
         <div class="header1">
             <b>
-                <a href="#" onClick="buttone()"><img src="img/vxod.png"> Личный кабинет</a>
-                <a href="#"><img src="img/korz.png"> Корзина</a></b></div>
-        <div id="popupWin" class="modalwin">
-            <h2> ЛИЧНЫЙ КАБИНЕТ </h2>
+                <a href="#" onClick="buttone()"><img src="img/log.png"> Личный кабинет</a>
+				<a href="#"><img src="img/korz.png"> Корзина</a></b></div>
+				<div id="popupWin" class="modalwin">
             <form>
-                <h4>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</h4>
-                <input type="radio"><p> ЗАПОМНИ МЕНЯ</p>
-                <a href="#">Я ЗАБЫЛ ПАРОЛЬ</a>
-                <input type="button" value="ВОЙТИ">
-            </form>
+                <h2> ЛИЧНЫЙ КАБИНЕТ </h2>
+				<h5>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</h5><br><br>
+				<input type="checkbox"><b><p> ЗАПОМНИ МЕНЯ</p></b>
+             <div class="sil">
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+             </div>
+             <div class="vxod">
+                <b><input type=" email" placeholder=" ЛОГИН"><br><br>
+                <input type="text" placeholder=" ПАРОЛЬ"></b>
+                 <b><input type="button" value="ВОЙТИ"></b></div>
+            </form></div>
     </section>
     <section><div class="background">
     </div></section>
@@ -47,15 +52,15 @@
         <div class="categori">
             <ul class="site-navigation wrapper">
                 <li><b>ВСЕ КАТЕГОРИИ</b> +
-                    <ul class="dropdown-submenu">
-                        <li><a href="#">Роутеры</a></li>
-                        <li><a href="#">Игровые симуляторы</a></li>
-                        <li><a href="#">Комплектующие</a></li>
-                        <li><a href="#">Переферия</a></li>
-                        <li><a href="#">Настольные лампы</a></li>
-                        <li><a href="#">Моноблоки и ноутбуки</a></li>
-                    </ul>
-                </li>
+                <ul class="dropdown-submenu">
+                    <li><a href="#">Роутеры</a></li>
+                    <li><a href="#">Игровые симуляторы</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                    <li><a href="#">Переферия</a></li>
+                    <li><a href="#">Настольные лампы</a></li>
+                    <li><a href="#">Моноблоки и ноутбуки</a></li>
+                </ul>
+            </li>
             </ul>
         </div>
     </section>
@@ -64,10 +69,10 @@
 
     <section class="slaider-1">
         <div class="slaider1-main">
-            <div class="slaider-control-switches-1" id='menu' onClick="hov()">
-                <div><label for="slaider1-1"> </label></div>
-                <div><label for="slaider1-2"> </label></div>
-                <div><label for="slaider1-3"> </label></div>
+            <div class="slaider-control-switches-1">
+                <div class="cirle"><label for="slaider1-1" id="l1"> </label></div>
+                <div class="cirle"><label for="slaider1-2" id="l2"> </label></div>
+                <div class="cirle"><label for="slaider1-3" id="l3"> </label></div>
             </div>
             <input id="slaider1-1" name="slaider1" type="radio">
             <div class="slaider1-slaid-1 slide">
@@ -104,14 +109,14 @@
     <hr><br>
     <section class="brands">
         <div class="bra">
-            <ul class="products">
-                <li><div><a href="#"><img src="img/comp_icon.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br><p>МОНОБЛОКИ И НОУТБУКИ</p></li></a>
-                <li><div><a href="#"><img src="img/comp(1)_icon.png" alt="ПЕРЕФЕРИЯ"></div><br><p>ПЕРЕФЕРИЯ</p></li></a>
-                <li><div><a href="#"><img src="img/comp(2)_icon.png" alt="КОМПЛЕКТУЮЩИЕ"></div><br><p>КОМПЛЕКТУЮЩИЕ</p></li></a>
-                <li><div><a href="#"><img src="img/internet_icon.png" alt="РОУТЕРЫ"></div><br><p>РОУТЕРЫ</p></li></a>
-                <li><div><a href="#"><img src="img/lamp_icon.png" alt="НАСТОЛЬНЫЕ ЛАМПЫ"></div><br><p>НАСТОЛЬНЫЕ ЛАМПЫ</p></li></a>
-                <li><div><a href=#"><img src="img/game_icon.png" alt="ИГРОВЫЕ СИМУЛЯТОРЫ"></div><br><p>ИГРОВЫЕ СИМУЛЯТОРЫ</p></li></a>
-            </ul>
+        <ul class="products">
+            <li><div><a href="#"><img src="img/comp_icon.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br><p>МОНОБЛОКИ И НОУТБУКИ</p></li></a>
+            <li><div><a href="#"><img src="img/comp(1)_icon.png" alt="ПЕРЕФЕРИЯ"></div><br><p>ПЕРЕФЕРИЯ</p></li></a>
+            <li><div><a href="#"><img src="img/comp(2)_icon.png" alt="КОМПЛЕКТУЮЩИЕ"></div><br><p>КОМПЛЕКТУЮЩИЕ</p></li></a>
+            <li><div><a href="#"><img src="img/internet_icon.png" alt="РОУТЕРЫ"></div><br><p>РОУТЕРЫ</p></li></a>
+            <li><div><a href="#"><img src="img/lamp_icon.png" alt="НАСТОЛЬНЫЕ ЛАМПЫ"></div><br><p>НАСТОЛЬНЫЕ ЛАМПЫ</p></li></a>
+            <li><div><a href=#"><img src="img/game_icon.png" alt="ИГРОВЫЕ СИМУЛЯТОРЫ"></div><br><p>ИГРОВЫЕ СИМУЛЯТОРЫ</p></li></a>
+        </ul>
         </div>
     </section><br><hr><br>
     <section class="slaider-2">
@@ -182,7 +187,7 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                 </ul>
-                <div class="pblock"><hr><a href="#">Напишите нам</a></div>
+                <div class="pblock"><hr><a href="#" onClick='podpiska()'>Напишите нам</a></div>
             </div>
         </article>
         <article class="block2">
@@ -227,8 +232,8 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
         </div>
         <div class="kab">
             <b>
-                <p><a href="#"><img src="img/vxod.png"> Личный кабинет</a>
-                    <a href="#"><img src="img/korz.png"> Корзина</a></p>
+               <p><a href="#"><img src="img/vxod.png"> Личный кабинет</a>
+                <a href="#"><img src="img/korz.png"> Корзина</a></p>
             </b>
         </div>
     </section>

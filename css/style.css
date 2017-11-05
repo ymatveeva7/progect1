@@ -200,7 +200,7 @@ ul{
     width:1200px;
     height:600px;
     margin:0;
-    margin-top:50px;
+	margin-top:50px;
     background-image: url('../img/cellphones-electronics-wholesale-miami-florida.png');
     background-position: 70% 0%;
     background-repeat: no-repeat;
@@ -210,7 +210,7 @@ ul{
     width:1200px;
     height:600px;
     margin:0;
-    margin-top:50px;
+	margin-top:50px;
     background-image: url('../img/HP-659499414-c04793291-zoom.png');
     background-position: 70% 0%;
     background-repeat: no-repeat;
@@ -221,12 +221,12 @@ ul{
 .slide p{
     width:560px;
     margin-bottom: 50px;
-    margin-left:-100px;
+	margin-left:-100px;
     color:white;
 }
 .slide h2{
     width:715px;
-    margin-left:-100px;
+	margin-left:-100px;
     padding-top:50px;
     color:white;
     font-size: 34pt;
@@ -236,17 +236,17 @@ ul{
     font-size: 29pt;
 }
 .slaider-control-switches-1{
-    display:flex;
+	display:flex;
     width: 100px;
-    margin-top:400px;
-
+	margin-top:400px;
+	
 }
 #color{
-    background:white;
+	background:white;
 }
 .slaider-control-switches-1 div{
     display: flex;
-    margin-left:10px;
+	margin-left:10px;
     width: 10px;
     height: 10px;
     border: 2px solid white;
@@ -262,7 +262,7 @@ input[type=radio]:checked + .slide{
     padding:15px 55px 15px 55px;
     border:1px solid white;
     border-radius: 5px;
-    margin-left:-100px;
+	margin-left:-100px;
     font-size:12pt;
     text-decoration:none;
     color:white;
@@ -497,7 +497,7 @@ footer{
     margin-top:50px;
 }
 .footer{
-    background:#464646;
+	   background:#464646;
     margin-top:50px;
 }
 /*Второй малый футер*/
@@ -567,28 +567,112 @@ footer{
 /**/
 /*Конец обоих футеров*/
 /*js*/
-#shadow {
-    position: fixed;
-    width:100%;
-    height:100%;
-    z-index:1;
-    background:#000;
-    opacity: 0.5;
-    left:0;
-    top:0;
-}
+  #shadow { 
+	position: fixed;
+	width:100%;
+	height:100%;
+	z-index:1;
+	background:#000;
+	opacity: 0;
+	left:0;
+	top:0;
+		}
 .modalwin {
-    height: 300px;
-    width: 350px;
-    background: white;
-    top: 20%;
-    right: 0;
-    left: 0;
-    font-size: 14px;
-    margin: 0 auto;
-    z-index:2;
-    display: none;
-    position: fixed;
-    padding: 15px;
-    border: 1px solid white;
+	height: 330px;
+	width: 380px;
+	background: white;
+	top: 20%;
+	right: 0;
+	left: 0;
+	font-size: 14px; 
+	margin: 0 auto;
+	z-index:2;
+	display: none;
+	position: fixed;
+	padding: 15px;
+	border: 1px solid white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+			}
+.modalwin h2{
+    display: flex;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 40px;
 }
+.modalwin h5{
+    display: flex;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.vxod{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.vxod input{
+    width: 300px;
+    height: 40px;
+    color: black;
+}
+.vxod input[type=" email"]{
+    background: url('../img/email.png') no-repeat 95% 50%;
+    border: 3px solid black;
+}
+.vxod input[type="text"]{
+    background: url('../img/par.png') no-repeat 95% 50%;
+    border: 3px solid black;
+}
+.modalwin input[type="checkbox"]{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+    border-color: black;
+}
+.modalwin p{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 70px;
+}
+.sil a{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 230px;
+    color: black;
+}
+.vxod input[type="button"]{
+    position: absolute;
+    border: 3px solid black;
+    background: black;
+    color: white;
+    width: 305px;
+    margin-top: 50px;
+}
+/*#window{
+		position: fixed;
+	width:100%;
+	height:100%;
+	z-index:1;
+	background:#000;
+	opacity: 0;
+	left:0;
+	top:0;
+}
+.frame{
+		height: 330px;
+	width: 380px;
+	background: white;
+	top: 20%;
+	right: 0;
+	left: 0;
+	font-size: 14px; 
+	margin: 0 auto;
+	z-index:2;
+	display: none;
+	position: fixed;
+	padding: 15px;
+	border: 1px solid white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}*/
