@@ -3,11 +3,9 @@
 <head>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <script src="js/js.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
 <body>
 
 <header>
@@ -187,22 +185,29 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                 </ul>
-			
-                <a href="#"><hr></a>
-				<!--<div id="popupWind" class="modalwind">
+				
+                <a onClick='but()' id='okno'><hr><p>НАПИШИТЕ НАМ</p></a>
+				<div id="popupWind" class="modalwind">
             <form>
-                <h2>  </h2>
-				<h5></h5><br><br>
-				<input type="checkbox"><b><p> ЗАПОМНИ МЕНЯ</p></b>
-             <div class="sil">
-				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
-             </div>
-             <div class="vxod">
-                <b><input type=" email" placeholder=" ЛОГИН"><br><br>
-                <input type="text" placeholder=" ПАРОЛЬ"></b>
-                 <b><input type="button" value="ВОЙТИ"></b></div>
+			    <div class="inp1">
+						<a>Ваше имя:</a><br>
+                    <input placeholder="Представьтесь, пожалуйста" name="name">
+
+					<a>Ваш e-mail:</a><br>
+                    <input placeholder="Для отправки ответа" name="e-mail">
+                </div>
+                <div class="inp3">
+					<a>Текст письма:</a><br>
+						<input placeholder="В свободной форме" name="letter">
+                </div>
+
+					<a class="submit" href="#"><p>ОТПРАВИТЬ</p></a>
+
+       <div class='close'>
+	   
+	   </div>
             </form></div>
-				-->
+			
 			
             </div>
         </article>
@@ -248,7 +253,7 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
         </div>
         <div class="kab">
             <b>
-               <p><a href="#"><img src="img/vxod.png"> Личный кабинет</a>
+               <p><a onClick="buttone()"><img src="img/log.png"> Личный кабинет</a>
                 <a href="#"><img src="img/korz.png"> Корзина</a></p>
             </b>
         </div>
@@ -267,5 +272,7 @@ laboris nisi ut aliquip ex ea commodo consequat.</pre><br>
         </div>
     </section>
 </footer>
+
+<script src="js/js.js"></script>
 </body>
 </html>
