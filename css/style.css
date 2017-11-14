@@ -105,7 +105,7 @@ ul{
     position: absolute;
     display: none;
     top:30px;
-    height: 100px;
+    height: 150px;
     left: 0;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -113,10 +113,15 @@ ul{
     padding-right: 560px;
     background-color: #f0f0f0;
 }
+.dropdown-submenu ul{
+	width:10px;
+}
 .dropdown-submenu li{
     display: flex;
+
     margin-left: 30px;
     margin-top: 20px;
+	
 }
 .dropdown-submenu a{
     text-decoration: none;
@@ -136,6 +141,12 @@ ul{
 }
 .brands li{
     margin-left: 30px;
+}
+.hov{
+    filter: brightness(0%) invert(1);
+}
+.products div:hover{
+	background:#e9b637;
 }
 .products div{
     width:150px;
@@ -186,7 +197,7 @@ ul{
 
 }
 
-.slaider1-slaid-1{
+.slaid-1{
     flex-shrink: 0;
     width:1200px;
     height:600px;
@@ -195,7 +206,7 @@ ul{
     background-position: 60% 0%;
     background-repeat: no-repeat;
 }
-.slaider1-slaid-2{
+.slaid-2{
     flex-shrink: 0;
     width:1200px;
     height:600px;
@@ -205,7 +216,7 @@ ul{
     background-position: 70% 0%;
     background-repeat: no-repeat;
 }
-.slaider1-slaid-3{
+.slaid-3{
     flex-shrink: 0;
     width:1200px;
     height:600px;
@@ -215,27 +226,27 @@ ul{
     background-position: 70% 0%;
     background-repeat: no-repeat;
 }
-.slide{
+.slides{
     order:2;
 }
-.slide p{
+.slides p{
     width:560px;
     margin-bottom: 50px;
 	margin-left:-100px;
     color:white;
 }
-.slide h2{
+.slides h2{
     width:715px;
 	margin-left:-100px;
     padding-top:50px;
     color:white;
     font-size: 34pt;
 }
-.slide span{
+.slides span{
     color:black;
     font-size: 29pt;
 }
-.slaider-control-switches-1{
+.slaider-11{
 	display:flex;
     width: 100px;
 	margin-top:400px;
@@ -244,7 +255,7 @@ ul{
 #color{
 	background:white;
 }
-.slaider-control-switches-1 div{
+.slaider-11 div{
     display: flex;
 	margin-left:10px;
     width: 10px;
@@ -379,6 +390,9 @@ input[type=radio]:checked + .slidee{
 /*Конец второго слайдера*/
 /*конец Слайды*/
 /*Блок с Гарантией Кредитом и тд*/
+.show{
+    display:flex;
+}
 .statia a:active{
     color:black;
 }
