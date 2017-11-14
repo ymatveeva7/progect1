@@ -71,7 +71,7 @@ ul{
     margin-left:800px;
     margin-top:70px;
     text-decoration:none;
-    font-size:14px;
+    font-size:16px;
 }
 .hesder2 a{
     margin-left:80px;
@@ -113,12 +113,10 @@ ul{
     padding-right: 560px;
     background-color: #f0f0f0;
 }
-.dropdown-submenu ul{
-	width:10px;
-}
+
 .dropdown-submenu li{
     display: flex;
-
+	
     margin-left: 30px;
     margin-top: 20px;
 	
@@ -126,6 +124,7 @@ ul{
 .dropdown-submenu a{
     text-decoration: none;
     color: #6d5b5b;
+	font-size:14pt;
 }
 .site-navigation > li:first-child:hover  .dropdown-submenu{
     display: flex;
@@ -196,7 +195,6 @@ ul{
     overflow: hidden;
 
 }
-
 .slaid-1{
     flex-shrink: 0;
     width:1200px;
@@ -226,42 +224,44 @@ ul{
     background-position: 70% 0%;
     background-repeat: no-repeat;
 }
-.slides{
+.slide{
     order:2;
 }
-.slides p{
+.slide p{
     width:560px;
     margin-bottom: 50px;
-	margin-left:-100px;
+	margin-left:-50px;
     color:white;
 }
-.slides h2{
+.slide h2{
     width:715px;
-	margin-left:-100px;
+	margin-left:-50px;
     padding-top:50px;
     color:white;
     font-size: 34pt;
 }
-.slides span{
+.slide span{
     color:black;
     font-size: 29pt;
 }
-.slaider-11{
-	display:flex;
+.slaider-control{
     width: 100px;
-	margin-top:400px;
-	
 }
-#color{
-	background:white;
-}
-.slaider-11 div{
-    display: flex;
-	margin-left:10px;
+.slaider-control div{
+    text-align: center;
     width: 10px;
     height: 10px;
     border: 2px solid white;
     border-radius: 50px;
+}
+.slaider-control:first-child{
+    position:absolute;
+    margin-top:350px;
+    margin-left:-50px;
+    display:inline-flex;
+}
+.slaider-control div{
+    margin:0 5px 0 5px;
 }
 
 input[type=radio]:checked + .slide{
@@ -273,7 +273,7 @@ input[type=radio]:checked + .slide{
     padding:15px 55px 15px 55px;
     border:1px solid white;
     border-radius: 5px;
-	margin-left:-100px;
+	margin-left:-50px;
     font-size:12pt;
     text-decoration:none;
     color:white;
