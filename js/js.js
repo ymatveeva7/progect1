@@ -1,36 +1,26 @@
 ﻿
 function buttone(){
-                var darkLayer = document.createElement('div'); 
-                darkLayer.id = 'shadow'; 
-                document.body.appendChild(darkLayer); 
-				 var modalWin = document.getElementById('popupWin'); 
-                modalWin.style.display = 'block'; 
-				 darkLayer.onclick = function () { 
-                    darkLayer.parentNode.removeChild(darkLayer); 
-                    modalWin.style.display = 'none';  
-				 return false;};
+				var modalWin = document.querySelector('.popupWin');
+                modalWin.style.display = 'flex';
+                var close=document.querySelector('.esc');
+                close.onclick = function () {
+                    modalWin.style.display = 'none';
+                    return false;
+                };
 };
 
 function but(){
-				 var darkLayer = document.createElement('div');
-                darkLayer.id = 'shadow'; 
-                document.body.appendChild(darkLayer); 
-				 var modalwind = document.getElementById('popupWind');
-                modalwind.style.display = 'block'; 
-				 darkLayer.onclick = function () {  
-                    darkLayer.parentNode.removeChild(darkLayer); 
-                    modalwind.style.display = 'none'; 
+                var modalWind = document.querySelector('.popupWind');
+                modalWind.style.display = 'flex';
+                var closee=document.querySelector('.close');
+                closee.onclick = function () {
+                    modalWind.style.display = 'none';
+                    return false;
 				 };
- 
 };
-var close=document.querySelector('.close');
-close.addEventListener('click', function (evt){
-    evt.preventDefault();
-    popupWriteUs.classList.remove('show');
-});
 document.addEventListener("DOMContentLoaded", function () {
     // Слайдер
-   var label1=document.querySelector('#l1');
+    var label1=document.querySelector('#l1');
 	var label2=document.querySelector('#l2');
 	var label3=document.querySelector('#l3');
 	var cDec=document.querySelectorAll('.cirle');

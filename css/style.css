@@ -7,6 +7,10 @@ ul{
     list-style: none;
 }
 /*Начало хидера*/
+.esc{
+    margin-left:10px;
+    cursor: pointer;
+}
 .header{
     margin-left:500px;
     margin-top:30px;
@@ -244,6 +248,7 @@ ul{
     color:black;
     font-size: 29pt;
 }
+
 .slaider-control{
     width: 100px;
 }
@@ -257,7 +262,7 @@ ul{
 .slaider-control:first-child{
     position:absolute;
     margin-top:350px;
-    margin-left:-50px;
+    margin-left:-20px;
     display:inline-flex;
 }
 .slaider-control div{
@@ -519,6 +524,7 @@ z-index:998;
     color:#515151;
     margin-left:40px;
     font-size:10px;
+
 }
 .pochta button{
     margin-left:40px;
@@ -527,6 +533,7 @@ z-index:998;
     width:300px;
     height:50px;
     color:#3c3c3c;
+
 }
 /*Конец блока с почтой*/
 /*Начало футера*/
@@ -605,16 +612,13 @@ footer{
 /**/
 /*Конец обоих футеров*/
 /*js*/
-  #shadow { 
-	position: fixed;
-	width:100%;
-	height:100%;
-	z-index:1;
-	background:#000;
-	opacity: 0;
-	left:0;
-	top:0;
-		}
+.popupWin{
+    display:none;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    z-index:2;
+}
 .modalwin {
 	height: 330px;
 	width: 380px;
@@ -622,11 +626,8 @@ footer{
 	top: 20%;
 	right: 0;
 	left: 0;
-	font-size: 14px; 
-	margin: 0 auto;
-	z-index:2;
-	display: none;
-	position: fixed;
+	font-size: 14px;
+	display: flex;
 	padding: 15px;
 	border: 1px solid white;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
@@ -653,7 +654,7 @@ footer{
     height: 40px;
     color: black;
 }
-.vxod input[type=" email"]{
+.vxod input[type="email"]{
     background: url('../img/email.png') no-repeat 95% 50%;
     border: 3px solid black;
 }
@@ -689,9 +690,15 @@ footer{
     margin-top: 50px;
 }
 /*Напишите нам*/
-
+.popupWind{
+    display:none;
+    position: fixed;
+    top: 20%;
+    left: 0
+    z-index:100;
+}
 .modalwind{
-		height: 460px;
+    height: 460px;
 	width: 1000px;
 	background: white;
 	top: 20%;
@@ -699,8 +706,7 @@ footer{
 	left: 0;
 	font-size: 14px; 
 	margin: 0 auto;
-	display: none;
-	position: fixed;
+	display: flex;
 	padding: 15px;
 	border: 1px solid white;
     box-shadow: 0 11px 50px 0 #505151;
@@ -712,12 +718,12 @@ footer{
     width:55px;
     background: url("../img/close.png") no-repeat center #e9b637;
     cursor:pointer;
-	margin-left:940px;
-	margin-top:-430px;
+    position: relative;
+    z-index:999;
+    right:55px;
 }
 
 .modalwind input{
-	
     width:340px;
     height:50px;
     padding-left:20px;
